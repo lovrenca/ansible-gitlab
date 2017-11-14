@@ -1,0 +1,20 @@
+---
+# Allow ports
+
+- name: Allow gitlab ssh
+  ufw:
+    rule: allow
+    proto: tcp
+    to_port: "{{ gitlab_ssh_port }}"
+
+- name: Allow gitlab http
+  ufw:
+    rule: allow
+    proto: tcp
+    to_port: "{{ gitlab_http_port }}"
+
+- name: Allow gitlab https
+  ufw:
+    rule: allow
+    proto: tcp
+    to_port: "{{ gitlab_https_port }}"

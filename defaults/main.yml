@@ -1,0 +1,6 @@
+---
+
+gitlab_ssh_port: 22
+gitlab_http_port: 80
+gitlab_https_port: 443
+gitlab_unicorn_port: 8080
